@@ -1,4 +1,4 @@
-import { Box, Flex, Button, Spacer, Heading } from '@chakra-ui/react';
+import { Box, Flex, Button, Spacer, Heading,  } from '@chakra-ui/react';
 import { Link, useNavigate } from 'react-router-dom';
 
 export default function Navbar() {
@@ -13,7 +13,7 @@ export default function Navbar() {
   return (
     <Box bg="teal.500" px={6} py={3} color="white">
       <Flex justify="space-between">
-        <Heading size="md"><Link to="/products">Products</Link></Heading>
+        <Heading size="md"><a href="/products">Products</a></Heading> 
         <Flex gap={4} align="center">
           
           {token && <Link to="/my-products">My Products</Link>}
